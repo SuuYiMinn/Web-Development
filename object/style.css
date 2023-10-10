@@ -1,0 +1,133 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+    background-color: palegoldenrod;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+.card{
+    width: 280px;
+    height: 430px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 2px 2px 0.5px gray;
+    margin-left: 20px;
+    
+  
+    
+}
+.gender{
+    width: 30px;
+    height:20px;
+    border-radius:0px 20px 0px 0px ;
+    background-color: palevioletred;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    margin-left: 230px;
+    margin-top: 0px;
+}
+.clothes{
+    width: 50%;
+    margin-left: 70px;
+    margin-bottom: 0px;
+}
+.mgp{
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.firstline{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 0px;
+    
+}
+button{
+    
+    height: 30px;
+    background-color: gold;
+    padding: 5px;
+    border-color: white;
+    border-radius: 8px;
+    margin-top: 12px;
+    
+}
+.stargp{
+    display:flex ;
+    flex-direction: row;
+}
+.star{
+    margin-top: 12px;
+    width: 30px;
+    height: 30px; 
+}
+
+.point{
+    margin-top: 21px;
+}
+.subtitle{
+    font-size: 12px;
+    
+    margin-top: 0px;
+}
+.secondline{
+    display: flex;
+    flex-direction: row;
+    
+    
+    justify-content: space-around;
+    
+    
+}
+.circles{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap; 
+}
+.size{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 5px;
+   
+}
+.first{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: green;
+    margin-left: 5px;
+   
+}
+
+.large{
+    margin-left: 10px;
+    
+}
+.medium{
+    margin-left: 10px;
+}
+.small{
+    margin-left: 10px;
+}
+.left{
+    margin-top: 5px;
+    color: aqua;
+}
+.thirdline{
+    display: flex;
+    flex-direction: row;
+    
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+.origin{
+    text-decoration-line: line-through;
+}

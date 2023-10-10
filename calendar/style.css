@@ -1,0 +1,51 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+    background-color: antiquewhite;
+}
+.calendar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.week{
+    display: flex;
+}
+.title{
+    text-align: center;
+    color: gray;
+}
+.day, .dayName{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3em;
+
+    width: 80px;
+    height: 80px;
+    background-color: white;
+    margin: 0.2em;
+    border-radius: 12px;
+}
+.offday{
+    background-color: hotpink;
+    color: white;
+}
+#yearinput, #monthinput, #date{
+width: 100px;
+height: 20px;
+border:solid hotpink;
+}
+#show{
+    width: 70px;
+    height: 30px;
+    border: solid hotpink;
+    border-radius: 10px;
+}
+#holiday{
+    width: 100px;
+    height: 30px;
+    border: solid hotpink;
+    border-radius: 10px;
+}

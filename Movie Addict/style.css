@@ -1,0 +1,224 @@
+body{
+    margin: 0;
+    background-color: #2B2B2B;
+    font-family: "Plus Jakarta Sans";
+}
+.header{
+    background-color: #151515;
+    color:#FFFFFF;
+    padding: 20px;   
+}
+.logo{
+    color: #c10f0f;
+    font-family: "Racing Sans One";
+    font-size: 25px; 
+    float: left;  
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.menu{
+    text-align: right;
+    font-family: "PT Sans Narrow";
+    font-size: 17px;
+}
+li{
+    display: inline;
+    margin-left: 18px;  
+}
+li.go-premium{
+    list-style: none;
+    background-repeat: no-repeat;
+    padding: 6px 10px 6px 30px;
+    background-size: 30px;
+    background-image: url("./icon/Premium icon.png");
+    color: #FFB900;   
+}
+.home{
+    text-decoration: underline #c10f0f;
+}
+.login{
+    background-color: #c10f0f;
+    border-radius: 5px;
+    width: 90px;
+    height: 23px;
+    font-size: 12px;
+    color: white;
+    border-style: none;
+}
+.hero-section,img{
+    color: #FFFFFF;
+    position: relative;
+}
+.text{
+    position: absolute;
+    bottom: 10%;
+    left: 50px;
+    line-height: 2px;
+    font-family: "Plus Jakarta Sans";
+}
+.quan{
+    font-size: 17px;
+}
+.ant{
+    font-size: 30px;
+}
+.star-point{
+    background-image: url("./icon/Star.png");
+    background-repeat: no-repeat;
+    padding: 15px 0px 0px 40px;
+    background-size: 30px;
+    font-size: 30px;
+    width: 40px;
+    height: 40px;
+    margin-top: 40px;
+}
+.watch{
+   position: absolute;
+   bottom: 5%;
+   right: 3%;
+}
+.watch-now{
+    background-color: #c10f0f;
+    border-style: none;
+    border-radius: 5px;
+    height: 30px;
+    width: 120px;
+    color: #FFFFFF;
+}
+.watch-spacing{
+    margin-left: 8px;
+}
+.features{
+    margin-left: 20px;
+    color: #c10f0f;
+    font-size: 25px;
+    padding: 10px;
+    position: relative;
+    font-family: "Racing Sans One";
+}
+.line{
+    color: #c10f0f;
+    width: 75%;
+    position: absolute;
+    right: 3%;
+    top: 30%;
+}
+.movie-list{
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;  
+}
+.card{
+    width: 90%;
+    height:620px;
+    background-color:#151515;
+    border-radius: 15px;
+    margin: auto;
+    color: #FFFFFF;
+}
+img.img-border{
+  border-radius: 17px 17px 0px 0px;
+}
+
+.star{
+    float: left;
+    margin-left: 20px;
+}
+.rating-point{
+    font-size: 25px;   
+}
+.crown{
+    float: right;
+    margin-right: 20px;  
+}
+.label{
+    margin-left: 20px;
+    font-size: 25px;
+}
+.watchlist{
+    color: #FFB900;
+    background-color: transparent;
+    border-color: #FFFFFF;
+    border-radius: 5px;
+    width: 120px;
+    height: 30px;
+    font-size: 17px;
+    margin-left: 80px;
+}
+.seemore{
+    text-align: right;
+    margin-right: 25px;
+    color: #FFB900;
+    font-size: 20px;  
+}
+.quotes{
+    color: #c10f0f;
+    font-size: 25px;
+    padding: 10px;
+}
+.line2{
+    color: #c10f0f;
+    width: 80%;
+    margin-left: 1%;
+    top: 30%;
+    float: left;
+}
+.quotes-text{
+    margin-left: 2%;
+}
+.quotes-img{
+    position: relative;
+    font-style: "Racing Sans One";
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.quotes-text2{
+    position: absolute;
+    top:80px;  
+    left: 650px; 
+    font-family: "Racing Sans One";
+}
+.quotes{
+    color: #FFFFFF;
+    font-size: 46px; 
+}
+.writer{
+    color: #FFB900;
+    font-size: 28px;
+    text-align: right;
+}
+.bottom{
+    background-color: #151515;
+    color: #FFFFFF;
+    height: 150px;
+    padding: 35px;
+}
+.menu-list{
+    color: #FFFFFF;
+    float: left;
+    font-family: "PT Sans Narrow";
+    font-size: 18px;
+}
+.addict{
+    margin-left: 35%;
+    font-family: "Racing Sans One";
+}
+.addict-title{
+    color: #c10f0f;
+    font-size: 25px;  
+    margin-top: 0px; 
+    margin-left: 60px;
+}
+.addict-text{
+    opacity: 0.5;
+}
+.social{
+    text-align: center;
+    float: right;
+    font-size: 25px;
+    font-family: "PT Sans Narrow";
+   
+}
+.list{
+    padding-left: 20px;
+}

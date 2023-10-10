@@ -1,0 +1,51 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+    background-color: bisque;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.randomNum{
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+.solution{
+    margin-bottom: 20px;
+}
+.nums{
+    width: 150px;
+    height: 180px;
+}
+.numbtn{
+    margin-top: 8px;
+    padding: 15px;
+    box-shadow: 2px 2px 1px gray;
+    border-radius: 8px;
+    border-color: yellow;
+    animation-name: show;
+}
+@keyframes colorChange {
+    0%{
+        background-color: orangered;
+    }
+    50%{
+        background-color: orangered;
+    }
+    100%{
+        background-color: white;
+    } 
+}
+.corw{
+    margin-bottom: 20px;
+    font-size: 20px;
+    
+}
+.playbtn{
+    padding: 8px;
+    border-radius: 8px;
+    background-color: aqua;
+    border-color: yellow;
+}

@@ -1,0 +1,204 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+ul li{
+    display: inline;
+    margin:1em;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2em;
+    background-color: black;
+    color: white;
+}
+ion-icon{
+    font-size: 1.5em;
+}
+[cart]{
+    display: block;
+}
+[menu]{
+    display: none;
+}
+.mobile{
+    display: none;
+}
+#switch{
+display: none;
+}
+@media screen and (max-width:720px) {
+    [cart]{
+        display:none;
+    }
+    .desktop{
+        display: none;
+    }
+    [menu], label{
+        display: block;
+    }
+    
+    .mobile li{
+        margin: 0.5em;
+    }
+    #switch{
+        display: none;
+    }
+    #switch:checked + .mobile{
+        display: flex;
+        flex-direction: column;
+    }
+}
+.line{
+    width: 100%;
+    height: 3px;
+    background-color: gray;
+}
+.main{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2em;
+}
+.title{
+    font-size: 1.5em;
+}
+.paragraph{
+    font-size: 1em;
+    opacity: 0.8;
+}
+.price{
+    font-size: 1.2em;
+}
+.buy{
+    color: white;
+background-color: aqua;
+width: 80px;
+height: 30px;
+border-radius: 10px;
+}
+.buy:hover{
+    background-color: orange;
+}
+.main2{
+    position: relative;
+}
+.text2{
+    position: absolute;
+    top: 18%;
+    left: 10%;
+}
+.main3{
+    position: relative;
+    background-color: black;
+    padding: 20px;
+    
+}
+.line2{
+
+    width: 40%;
+    height: 3px;
+    background-color: gray;
+    margin: auto;
+}
+.text3{
+    color: white;
+    text-align: center;
+}
+.choice{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+label, input{
+    display: block;
+}
+.watch-image{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.label-size{
+    font-size: 1em;
+}
+.image1{
+    display: block;
+    width: 50%;
+}
+.image2{
+    display: block;
+    width: 50%;
+}
+.image3{
+    display: block;
+    width: 50%;
+}
+.image4{
+    display: block;
+    width: 50%;
+}
+.image5{
+    display: block;
+    width: 50%;
+}
+
+.image6{
+    display: block;
+    width: 50%;
+}
+
+#s7:checked ~ .image1{
+    display: block;
+}
+#s7:checked ~ .image3{
+    display: block;
+}
+#s7:checked ~ .image5{
+    display: block;
+}
+#s7:checked ~ .image2{
+    display: none;
+}
+#s7:checked ~ .image4{
+    display: none;
+}
+#s7:checked ~ .image6{
+    display: none;
+}
+#s8:checked ~ .image2{
+    display: block;
+}
+#s8:checked ~ .image4{
+    display: block;
+}
+#s8:checked ~ .image6{
+    display: block;
+}
+#s8:checked ~ .image1{
+    display: none;
+}
+#s8:checked ~ .image3{
+    display: none;
+}
+#s8:checked ~ .image5{
+    display: none;
+}
+.line3{
+    width: 100%;
+    height: 3px;
+    background-color: gray;
+
+}
+.bottom{
+    color: white;
+    text-align: center;
+}
+[spacing]{
+    margin-left: 20px;
+}

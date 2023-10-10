@@ -1,0 +1,93 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+.title{
+    background-color:#46485D;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    
+}
+
+.dreaming{
+    margin-left: 30px;
+    font-family: Pacifico;
+    float: left;
+}
+.menu{
+    text-align: right;
+    font-family: road range;
+}
+span{
+    margin-right: 30px;
+}
+.login{
+    background-color:#7E759F;
+    font-family: roboto mono;
+    border-color: white;
+    border-radius: 10px;
+    border-style: solid;
+    width: 80px;
+}
+.main{
+    
+    
+}
+.bmg{
+    background-image: url("unsplash_u7XAOL8N_3U.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 550px;
+}
+.bmgtext{
+    color: white;
+    position: absolute;
+    margin-left: 40px;
+    margin-top: 100px;
+}
+.explore{
+    width: 90px;
+    height: 30px;
+    background-color: #5772FF;
+    border-color:#5772FF ;
+    border-radius: 5px;
+    border-style: solid;
+    color: white;
+}
+.products{
+    margin-left: 20px;
+    width: 90px;
+    height: 30px;
+    background-color: transparent;
+    border-radius: 5px;
+    border-color: white;
+    border-style: solid;
+    color: white;
+}
+.bmg1{
+    background-color:#46485D ;
+    height: 300px;
+}
+.bmg1text{
+    text-align: center;
+    color: white;
+    position: absolute;
+    width: 600px;
+    line-height: 35px;
+    padding-left: 400px;
+
+}
+.img1{
+    background-image: url("fluent-emoji-flat_sun");
+    
+}
+.img2{
+    background-image: url("wi_night-thunderstorm.png");
+}
+.img3{
+    background-image: url("emojione_four-leaf-clover");
+}

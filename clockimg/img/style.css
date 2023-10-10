@@ -1,0 +1,224 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+.logo{
+    margin-left: 20px;
+}
+.watch{
+    font-size: 25px;
+    background-image: url('./Apple\ logo.png');
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 40px;
+    background-size: 40px;
+    padding: 10px 0px 0px 50px;
+}
+.creative{
+    font-size: 30px;
+    margin-left: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 350px;
+    border-right: 3px solid black;
+    animation: type 4s steps(35);
+    animation-iteration-count: infinite;
+}
+@keyframes type {
+    from{
+        width: 0;
+        
+    }
+    
+}
+
+.woven{
+    margin-left: 60px;
+    font-size: 30px;
+    margin-top: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 220px;
+    border-right: 3px solid black;
+    animation: type 4s steps(35);
+    animation-iteration-count: infinite;
+}
+.card{
+    width: 380px;
+    height: 400px;
+    box-shadow: 5px 5px 15px gray;
+    border-radius: 7px;
+    margin-left: 50px;
+    margin-top: 30px;  
+}
+.title{
+    margin-left: 200px;
+    color: red;
+}
+.two-part{
+    width: 50%;
+    float: left;
+}
+.case{
+    margin-top: 70px;
+    height: 150px;
+}
+.line{
+    position: relative;
+}
+.line::after{
+    content: "";
+    position: absolute;
+    width: 600px;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+}
+input[type='radio']{
+    display: none;
+}
+.img-position{
+    float: left;
+    width: 18%;
+}
+.strap-series{
+    position: relative;
+}
+.strap1{
+    margin-left:50px;
+    margin-top: 50px;
+    position: absolute;
+    transition: all 3s linear;
+}
+.strap2{
+    margin-left: 50px;
+    margin-top: 50px;
+    position: absolute;
+    display: none;
+    transition: all 3s linear;
+}
+.strap3{
+    margin-left: 50px;
+    margin-top: 50px;
+    position: absolute;
+    display: none;
+}
+.strap4{
+    margin-left: 50px;
+    margin-top: 50px;
+    position: absolute;
+    display: none;
+}
+.strap5{
+    margin-left: 50px;
+    margin-top: 50px;
+    position: absolute;
+    display: none;
+}
+.case-series{
+    position: relative;
+}
+.case1{
+    margin-left:50px;
+    margin-top: 50px;
+    position: absolute;
+}
+.case2{
+    margin-left:50px;
+    margin-top: 50px;
+    position: absolute;
+    opacity: 0;
+}
+.case3{
+    margin-left:50px;
+    margin-top: 50px;
+    position: absolute;
+    opacity: 0;
+}
+.case4{
+    margin-left:50px;
+    margin-top: 50px;
+    position: absolute;
+    opacity: 0;
+}
+.case5{
+    margin-left:50px;
+    margin-top: 50px;
+    position: absolute;
+    opacity: 0;
+    
+}
+#first:checked ~ .case1{
+    animation-name: ani;
+    animation-duration: 2s;
+    opacity: 1;
+}
+#second:checked ~ .case2{
+    animation-name: ani;
+    animation-duration: 2s;
+    opacity: 1;
+}
+#third:checked ~ .case3{
+    animation-name: ani;
+    animation-duration: 2s;
+    opacity: 1;
+}
+#fourth:checked ~ .case4{
+    animation-name: ani;
+    animation-duration: 2s;
+    opacity: 1;
+}
+#fifth:checked ~ .case5{
+    animation-name: ani;
+    animation-duration: 2s;
+    opacity: 1;
+}
+#one:checked ~ .strap1{
+    display: block;
+    animation-name: ani;
+    animation-duration: 2s;
+    
+}
+#two:checked ~ .strap2{
+    display: block;
+    animation-name: ani;
+    animation-duration: 2s;
+}
+#three:checked ~ .strap3{
+    display: block;
+    animation-name: ani;
+    animation-duration: 2s;
+}
+#four:checked ~ .strap4{
+    display: block;
+    animation-name: ani;
+    animation-duration: 2s;
+}
+#five:checked ~ .strap5{
+    display: block;
+    animation-name: ani;
+    animation-duration: 2s;
+}
+.save{
+    margin-top: 60px;
+    margin-left: 500px;
+    width: 100px;
+    height: 30px;
+    color: wheat;
+    background-color: blue;
+    border-color: white;
+    border-radius: 10px;
+    
+}
+@keyframes ani {
+    0%{
+        opacity: 0.5;
+    }
+    50%{
+        opacity: 0.8;
+    }
+    100%{
+        opacity: 1;
+    }  
+}

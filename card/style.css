@@ -1,0 +1,29 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+    
+}
+.cards{
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.card{
+    width: 100px;
+    height: 150px;
+    background-color: gray;
+    border-radius: 10px;
+    margin: 10px;
+}
+.button, #seconds{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.startbtn{
+    padding: 10px;
+}

@@ -1,0 +1,126 @@
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: teal;
+    animation-name: fromtomove;
+    animation-duration: 2s; /*animation 1ခုရဲ့ကြာချိန်*/
+    animation-delay: 2s; /* animation မစခင် စောင့်နေတဲ့အချိန် */
+    animation-iteration-count: infinite ; /* animation လုပ်မယ့်အကြိမ်အရေအတွက် 
+    အမြဲတမ်းလုပ်နေမယ်ဆိုရင် infinite */
+    /* animation-direction: normal; default(0% ကအရင်အလုပ်လုပ်တယ်) */
+    /* animation-direction: reverse; 100% က အရင်အလုပ်လုပ်တယ် */
+    /* animation-direction: alternate; normal ကနေ reverse ကနေ normal*/
+    /* animation-direction: alternate-reverse; reverse ကနေ normal ကနေ reverse */
+    /* animation-timing-function: linear; transition property နဲ့အတူတူပဲ */
+}
+/* (1) from(0%) to(100%) */
+@keyframes fromtomove {
+    from{ /* 0% */
+        background-color:red;
+        transform: translateX(0px);
+    }
+    to{ /* 100% */
+        background-color: blue;
+        /* transform: translateX(300px) rotate(270deg); */
+        transform: translateX(300px) scale(2);
+        border-radius: 50%;
+       
+    }
+    
+}
+/* (2) ပိုအသေးစိတ်ကျချင်တဲ့အခါ % ကိုသုံးတယ် */
+@keyframes percentagemove {
+    0%{
+        background-color:red;
+        transform: translateX(0px);
+    }
+    50%{
+        transform: scale(2);
+    }
+    75%{
+        /* width: 300px; */
+        transform: rotate(90deg);
+    }
+    100%{
+        background-color: blue;
+        transform: translateX(300px);
+    }
+    
+}
+/* ========================================================================= */
+.applyexamplebox{
+    width: 100px;
+    height: 100px;
+    position: absolute;/* top,left,bottom သုံးချင်ရင် အဲ့ဒီselector သည် position absolute ဖြစ်မှရ*/
+    /* border-radius: 50%; */
+    background-color: teal;
+    animation-name: moveball;
+    animation-duration: 2s; 
+    /* animation-delay: 2s;  */
+    animation-iteration-count: infinite ; 
+    animation-direction: alternate;
+}
+@keyframes moveball {
+    0%{
+       /* left: 0px;  */
+       
+       top: 0px;
+    }
+    50%{
+        /* transform: translateY(100px) ; */
+        transform: translateX(400px);
+    }
+    
+    100%{
+        /* left: 800px; */
+        top: 500px;
+        /* background-color: orange; */
+        transform: rotate(90deg);
+    }
+    
+}
+.b1{
+background-color: pink;
+}
+.b2{
+    background-color: midnightblue;
+    animation-delay: 0.2s;
+}
+.b3{
+    background-color: red;
+    animation-delay: 0.5s;
+}
+/* ==================================================================== */
+body{
+    overflow: hidden; /* box ရွေ့သွားတဲ့အခါ scoll bar မထွက်စေချင်လို့ */
+}
+.wavebox{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    animation-name: wavebox;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    background-color: pink;
+}
+@keyframes wavebox {
+    0%{
+        left: 0px;
+    }
+    25%{
+        transform: translateY(100px);
+    }
+    50%{
+        transform: translateY(0px);
+
+    }
+    75%{
+        transform: translateY(100px);
+    }
+    100%{
+        left: 100%;
+    }
+    
+}

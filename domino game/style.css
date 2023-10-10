@@ -1,0 +1,195 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+    overflow: hidden;
+}
+.board{
+    width: 1000px;
+    height: 400px;
+    background-color: white;
+
+    box-shadow: 3px 3px 3px gray;
+    border-radius: 10px;
+    /* position: absolute; */
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* flex-wrap: wrap; */
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+.card{
+    position: absolute;
+    
+    width: 50px;
+    height: 80px;
+    background-color:yellow;
+    margin: 10px;
+    border-radius: 10px;
+    border: 3px tomato solid;
+    box-shadow: 2px 2px 3px gray;
+    margin-left: 20px;
+}
+.upper{
+    height: 30px;  
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    align-items: center;
+    flex-wrap: wrap;
+    /* display: none; */
+}
+.lower{
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    flex-wrap: wrap;
+    align-items: center;
+    /* display: none; */
+}
+.dot{
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: blue;
+    margin: 3px;
+}
+.uplower{
+    display: block;
+}
+.start{
+    margin-left: 400px;
+    margin-top: 120px;
+}
+#startId{
+    padding: 20px;
+    background-color: yellow;
+    color:blue;
+    font-weight: 700px;
+    border-radius: 10px;
+    border-color: tomato;
+    font-size: 20px;
+}
+
+.random{ 
+   margin-top: 260px;
+}
+#ranId{
+    padding: 20px;
+    background-color:yellow;
+    display: none;
+    border-radius: 10px;
+    color:blue;
+    font-weight: 700;
+    border-color: tomato;
+}
+.computer{
+    /* width: 1000px; */
+    /* height: 300px; */
+    border-radius: 10px 10px 0px 0px;
+    background-color:gainsboro;
+    box-shadow: 3px 3px 3px gray;
+    display: flex;
+}
+.player{
+    width: 1000px;
+    height: 100px;
+    border-radius: 0px 0px 10px 10px;
+    background-color:gainsboro;
+    box-shadow: 3px 3px 3px gray;
+    display: flex;
+}
+#comId{
+    margin-left: 10px;
+    margin-top: 5px;
+    color: tomato;
+    font-weight: 700;
+    font-style: italic;
+}
+#playerId{
+    margin-left: 10px;
+    margin-top: 5px;
+    color:tomato;
+    font-weight: 700;
+    font-style: italic;
+
+}
+.pCards{
+    /* background-color: black; */
+    width: 900px;
+    padding-left: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-direction: justify-around; */
+    padding-right: 5px;
+    /* pointer-events: none; */
+    flex-wrap: wrap;
+    
+}
+.comCards{
+    /* background-color: black; */
+    width: 900px;
+    padding-left: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-direction: justify-around; */
+    padding-right: 5px;
+    flex-wrap: wrap;
+    
+
+}
+.cardOfPlayer{
+    width: 50px;
+    height: 80px;
+    background-color:yellow;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 6px;
+    border: 3px tomato solid;
+    border-radius: 10px;
+    box-shadow: 2px 2px 3px gray;
+}
+.draw{
+    display: flex;
+    /* pointer-events: none; */
+    flex-wrap: wrap;
+    background-color: gray;
+}
+.playArea{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: gainsboro;
+    /* padding: 20px; */
+}
+.rotate90{
+    transform: rotate(90deg);
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 12px;
+    margin-right: 20px;
+}
+.rotatem90{
+    transform: rotate(-90deg);
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 12px;
+    margin-right: 20px;
+}
+.text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: tomato;
+    font-weight:700;
+    font-style: italic;
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}

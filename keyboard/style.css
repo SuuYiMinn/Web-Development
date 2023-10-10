@@ -1,0 +1,95 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    width: 1200px;
+    height: 600px;
+    background-color:palevioletred;
+    border-radius: 20px;  
+}
+.upper{
+    border-radius: 20px 20px 0px 0px;
+    height: 250px;
+    background-color:pink;
+}
+.title{
+    color: red;
+    font-size: 1.5em;
+    text-align: center;
+    padding-top: 15px;
+}
+.display{
+    width: 500px;
+    height: 40px;
+    background-color:palevioletred;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 20px;
+    color: blue;
+    font-size: 1.5em;
+    padding-left: 10px;
+    padding-top: 10px;
+    overflow: auto;
+    border: 2px solid red;
+}
+.box{
+    color: red;
+    text-align: center;
+    
+}
+input{
+    width: 200px;
+    height: 30px;
+    border:2px solid red;
+    border-radius: 10px;
+    background-color: pink;
+}
+.methodbtn{
+    padding: 10px 10px 10px 10px;
+    border-radius: 10px;
+    color:blue;
+    background-color: palevioletred;
+    border: 2px solid blue;
+    margin-left: 20px;
+}
+.method{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+.lower{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    
+}
+.btn{
+    font-size: 1em;
+    padding: 20px 30px 20px 30px;
+    border-radius: 10px;
+    color:blue;
+    border: 2px solid blue;
+    margin: 10px;
+    box-shadow: 4px 4px 4px;
+    background: linear-gradient(90deg,rgba(131,58,180,1) 0%,rgba(255,53,53,1) 50%, rgba(252,176,69,1)100%);
+}
+#caps{
+    display: none;
+}
+#caps:checked ~ .btn{
+    text-transform: capitalize;
+}
+.btn:hover{
+    background:linear-gradient(#FC575E,#90D5EC);
+}
+.methodbtn:hover{
+    background:linear-gradient(#FC575E,#90D5EC);
+}
+

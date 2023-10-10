@@ -1,0 +1,80 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+.card{
+    margin-top: 40px;
+    margin-left: 40px;
+    width: 250px;
+    height: 360px;
+    border-radius: 25px;
+    background-color: black;
+    position: relative;
+   
+}
+
+.upper{
+    width: 250px;
+    height: 150px;
+    background-color:skyblue;
+    border-radius: 10% 10% 91% 0% / 10% 10% 89% 1% ;
+    transition-duration: 1s;
+}
+.title{
+    padding-top: 15px;
+    padding-left: 15px;
+    float: left;
+    position: relative;
+}
+.adidas{
+    font-size: 19px;
+    transition-duration: 1s;
+}
+.shoe{
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 8px;
+    width:150px;
+    height: 180px;
+    transform: rotate(40deg);
+    transition-duration: 1s;
+}
+.lower{
+    color: white;
+    font-size: 12px;
+    width: 230px;
+    padding-left: 15px;
+    padding-top: 15px;
+    
+}
+.buy{
+    width: 90px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: skyblue;
+    margin-left: 1px;
+    margin-top: 20px;
+    
+    opacity: 0;
+    transition-duration: 1s;
+}
+.card:hover #shoe{
+    transform: rotate(-1deg);
+   
+}
+.card:hover #upper{
+    border-radius:10% 10% 10% 91% / 10% 10% 0% 89% ;
+}
+.card:hover #buy{
+    
+    margin-top: 20px;
+    margin-left:60px;
+    opacity: 1;
+   
+}
+.card:hover #move{
+    transform: translateY(100px);
+    color: white;
+    font-size: 28px;
+    
+}

@@ -1,0 +1,258 @@
+body{
+    overflow: hidden;
+    background-image: url(underwater.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.logo{
+    width: 60px;
+    height: 60px;
+    float: left;
+    border-radius: 50%;
+}
+.signin{
+    width: 100px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: transparent;
+    border-color: white;
+    color: white;
+    margin-left: 83%;
+    margin-top: 1%;
+    border-style: solid;
+}
+.signin:hover{
+    background-color: skyblue;
+}
+.text{
+    margin-top: 100px;
+    margin-left: 50px;
+    padding: 10px;
+    font-family: sans-serif;
+    text-shadow: 2px 2px 5px;
+}
+.title{
+    font-size: 50px;
+    color: white;   
+}
+.let{
+    color: white;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+.paragraph{
+    width: 600px;
+    color: white;
+    margin-left: 10px;
+}
+.play{
+    width: 300px;
+    height: 30px;
+    border-radius: 20px;
+    border-color: white;
+    color: white;
+    background-color: transparent;
+    font-size: 20px;
+    margin-left: 40%;
+    margin-right: 40%;
+}
+.play:hover{
+    background-color: skyblue;
+}
+.fish1{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    animation-name: move1;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+    animation-timing-function: linear;
+}
+@keyframes move1 {
+    0%{
+        left: -100px;
+    }
+    25%{
+        transform: translateY(100px) rotate(-10deg);
+    }
+    50%{
+        transform: translateY(0px) rotate(10deg);
+    }
+    75%{
+        transform: translateY(100px) rotate(-10deg);
+    }
+    100%{
+        left: 100%;
+    }
+}
+.fish2{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    animation-name: move2;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+    animation-timing-function: linear;
+}
+@keyframes move2 {
+    0%{
+        left: -100px;
+    }
+    25%{
+        transform: translateY(200px) rotate(-10deg);
+    }
+    50%{
+        transform: translateY(0px) rotate(10deg);
+    }
+    75%{
+        transform: translateY(200px) rotate(-10deg);
+    }
+    100%{
+        left: 100%;
+    }
+}
+.fish3{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    animation-name: move3;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+    animation-timing-function: linear;
+}
+@keyframes move3 {
+    0%{
+        left: -100px;
+    }
+    25%{
+        transform: translateY(250px) rotate(-10deg);
+    }
+    50%{
+        transform: translateY(0px) rotate(10deg);
+    }
+    75%{
+        transform: translateY(250px) rotate(-10deg);
+    }
+    100%{
+        left: 100%;
+    }
+}
+.fish4{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    animation-name: move4;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+    animation-timing-function: linear;
+}
+@keyframes move4 {
+    0%{
+        left: -100px;
+    }
+    25%{
+        transform: translateY(300px) rotate(-10deg);
+    }
+    50%{
+        transform: translateY(0px) rotate(10deg);
+    }
+    75%{
+        transform: translateY(300px) rotate(-10deg);
+    }
+    100%{
+        left: 100%;
+    }
+}
+.bubble1{
+    width: 50px;
+    margin-left: 10%;
+    animation-name: bubbleMove;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+.bubble2{
+    width: 50px;
+    margin-left: 30%;
+    animation-name: bubbleMove;
+    animation-duration: 5s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+}
+.bubble3{
+    width: 50px;
+    margin-left: 60%;
+    animation-name: bubbleMove;
+    animation-duration: 5s;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
+}
+.bubble4{
+    width: 50px;
+    margin-left: 80%;
+    animation-name: bubbleMove;
+    animation-duration: 5s;
+    animation-delay: 4s;
+    animation-iteration-count: infinite;
+}
+.bubble5{
+    width: 50px;
+    margin-left: 10%;
+    animation-name: bubbleMove;
+    animation-duration: 5s;
+    animation-delay: 5s;
+    animation-iteration-count: infinite;
+}
+.bubble6{
+    width: 50px;
+    margin-left: 20%;
+    animation-name: bubbleMove;
+    animation-duration: 5s;
+    animation-delay: 6s;
+    animation-iteration-count: infinite;
+}
+.bubble7{
+    width: 50px;
+    margin-left: 20%;
+    animation-name: bubbleMove;
+    animation-duration: 5s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+}
+.bubble8{
+    width: 50px;
+    margin-left: 20%;
+    animation-name: bubbleMove;
+    animation-duration: 5s;
+    animation-delay: 5s;
+    animation-iteration-count: infinite;
+}
+.bubble9{
+    width: 50px;
+    margin-left: 20%;
+    animation-name: bubbleMove;
+    animation-duration: 5s;
+    animation-delay: 4s;
+    animation-iteration-count: infinite;
+}
+.bubble10{
+    width: 50px;
+    margin-left: 20%;
+    animation-name: bubbleMove;
+    animation-duration: 5s;
+    animation-delay: 6s;
+    animation-iteration-count: infinite;
+}
+@keyframes bubbleMove {
+    0%{
+    
+    }
+    100%{
+        transform: translateY(-250px);
+        opacity: 0;
+    }
+    
+}

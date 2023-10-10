@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js" defer></script>
+    <title>Document</title>
+</head>
+<body onload="calendarShow()">
+    <div class="title">
+        <h1>My Calendar</h1>
+        <input type="number" id="yearinput" value="2023">
+        <input type="number" id="monthinput" value="4">
+        <button id="show" onclick="calendarShow()">Show</button>
+
+        <div class="calendar">
+            <div class="week">
+                <div class="dayName offday">SUN</div>
+                <div class="dayName">MON</div>
+                <div class="dayName">TUE</div>
+                <div class="dayName">WED</div>
+                <div class="dayName">THU</div>
+                <div class="dayName">FRI</div>
+                <div class="dayName offday">SAT</div>
+            </div>
+            <div class="week">
+                <div class="day"></div>
+                <div class="day"></div>
+                <div class="day"></div>
+                <div class="day"></div>
+                <div class="day"></div>
+                <div class="day"></div>
+                <div class="day"></div>
+            </div>
+            <div class="week">
+                <div class="day"></div>
+                <div class="day"></div>
+                <div class="day"></div>
+                <div class="day"></div>
+                <div class="day"></div>
+                <div class="day"></div>
+                <div class="day"></div>
+            </div>
+            <div class="week">
+                <div class="day"></div>
+                <div class="day"></div>
+                <div class="day"></div>
+                <div class="day"></div>
+                <div class="day"></div>
+                <div class="day"></div>
+                <div class="day"></div>
+            </div>
+            <div class="week">
+                <div class="day"></div>
+                <div class="day"></div>
+                <div class="day"></div>
+                <div class="day"></div>
+                <div class="day"></div>
+                <div class="day"></div>
+                <div class="day"></div>
+            </div>
+            <div class="week">
+                <div class="day"></div>
+                <div class="day"></div>
+                <div class="day"></div>
+                <div class="day"></div>
+                <div class="day"></div>
+                <div class="day"></div>
+                <div class="day"></div>
+            </div>
+        </div>
+        <div class="bottom">
+            <input type="date" id="date" value="2023-04-09">
+            <button id="holiday" onclick="addHoliday()">Add Holiday</button>
+        </div>
+    </div>
+    
+    
+</body>
+</html>

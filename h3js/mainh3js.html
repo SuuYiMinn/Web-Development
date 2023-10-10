@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Homework</title>
+        <link rel="stylesheet" href="styleh3js.css">
+        <script  src="scripth3js.js" defer></script>
+    </head>
+    <body>
+       <div class="header">
+            <div class="title">
+                <span >Score:</span><span id="score"></span>
+                <button class="btnStart" id="start" onclick="start()">Start</button>
+                <span>Time:</span><span id="time"></span>
+            </div>
+            <div class="main">
+                <div class="question">
+                    <span id="question"></span>
+                    <span>=</span>
+                    <span></span>
+                </div>
+                <div>
+                    <button class="box" id="box1" onclick="check1()" disabled></button>
+                    <button class="box" id="box2" onclick="check2()" disabled></button>
+                    <button class="box" id="box3" onclick="check3()" disabled></button>
+                </div>
+            </div>
+            <div class="footer">
+                <button class="btnStop" id="stop" onclick="stop()" disabled>Stop</button>
+                <p>History</p>
+                <p id="history"></p>
+            </div>
+        
+       </div>
+
+    </body>
+
+</html>
+

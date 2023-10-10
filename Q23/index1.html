@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script1.js" defer></script>
+</head>
+<body>
+    <!-- <input type="text" id="test" onfocus="this.oldvalue = this.value;" value ="ABS" onchange="onChangeTest(this)" onclick="setoldvalue(this)" oldvalue=""> -->
+    <input type="text" onfocus="this.oldvalue = this.value;" onchange="onChangeTest(this);this.oldvalue = this.value;" />
+</body>
+</html>
