@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../dist/output.css">
+    <script src="./script.js" defer></script>
+</head>
+
+<body>
+    <div id="backgroundId">
+        <!--start of navigation bar -->
+        <nav id="navId" class="container w-full mx-auto pt-3 pb-3 flex justify-between items-center">
+            <div class="flex space-x-2">
+                <img src="../images/logo.svg" class="w-7 h-8 pointer-events-none"/>
+                <span class="text-[#9747FF] text-3xl font-bold">As-Wish</span>
+            </div>
+            <div class="flex  space-x-9 justify-between items-center">
+                <div class="relative flex items-center">
+                    <img src="../images/search.svg" class="absolute w-6 h-6 ml-[30px]"/>
+                    <input type="text" placeholder="search" class=" bg-[#F7DAF9] bg-opacity-25 pl-20 pr-3 w-60 h-8 py-2 font-semibold text-black placeholder-[#9747FF] rounded-md ring-2 ring-gray-300 focus:placeholder-opacity-25">
+                </div>
+                <div class="flex space-x-1 items-center">
+                    <img src="../images/earth.svg" class="w-7 h-8"/>
+                    <p class="text-[#9747FF] text-sm font-semibold">English</p>
+                </div>
+                <div>
+                    <button class="bg-[#9747FF] px-6 py-2 text-white font-semibold rounded-3xl text-sm hover:cursor-pointer" onclick="showLogin()">Login</button>
+                </div>
+            </div>
+        </nav>
+        <!-- end of navigation bar -->
+
+        <!-- start of menu bar -->
+        <div id="menuId" class="w-full mx-auto flex justify-around items-center bg-[#F7DAF9] text-md mt-5">
+            
+                <button class="font-semibold pt-3 pb-3 pr-10 pl-10 rounded-xl border-none bg-[#4753FF] text-white underline underline-offset-4" onclick="showHome()" id="btnHome">Home</button>
+            
+                <button class="text-[#F347FF] font-semibold pt-3 pb-3 pr-10 pl-10 border-none rounded-xl underline underline-offset-4" onclick="showPopular()" id="btnPopular">Popular</button>
+            
+            <div class="text-[#F347FF] font-semibold underline underline-offset-4">
+                New Arrivals
+            </div>
+            <div class="text-[#F347FF] font-semibold underline underline-offset-4">
+                Sales
+            </div>
+            
+        </div>
+        <!-- end of menu bar -->
+
+        <!-- start of home section -->
+        <div id="homeId" class="container w-full mx-auto mt-10" id="homeId">
+            <img src="../images/heroImage.jpg" class=" w-[800px] mx-auto" />
+            <p class="w-full mx-auto leading-8 text-[#F347FF] font-semibold text-md text-center w-[450px] mt-5">Give special presents to your Mother on a special Mother day!
+                Sale until 14 of May 2023</p>
+        </div>
+        <!-- end of home section -->
+
+        <!-- start of popular section -->
+        <div id="popularId" class="hidden container w-full mx-auto justify-around mt-10" id="popularId">
+            <div class="flex-column hover:scale-105 hover:drop-shadow-2xl cursor-pointer">
+                <img src="../images/dress1.jpg" class="w-[200px] h-[300px]"/>
+                <div class="flex justify-between mt-3 font-semibold">
+                    <p class="text-[#4753FF]">Dress1</p>
+                    <div class="flex mr-6">
+                        <img src="../images/star.svg"/>
+                        <p class="text-[#4753FF]">4.8</p>  
+                    </div>
+                    
+                </div>
+                <div class="font-semibold pt-2 text-[#4753FF]">
+                    $380
+                </div>
+            </div>
+            <div class="flex-column hover:scale-105 hover:drop-shadow-2xl cursor-pointer">
+                <img src="../images/dress2.jpg" class="w-[200px] h-[300px]"/>
+                <div class="flex justify-between mt-3 font-semibold">
+                    <p class="text-[#4753FF]">Dress2</p>
+                    <div class="flex mr-6">
+                        <img src="../images/star.svg"/>
+                        <p class="text-[#4753FF]">4.8</p>  
+                    </div>
+                    
+                </div>
+                <div class="font-semibold pt-2 text-[#4753FF]">
+                    $380
+                </div>
+            </div>
+            <div class="flex-column hover:scale-105 hover:drop-shadow-2xl cursor-pointer">
+                <img src="../images/dress3.jpg" class="w-[200px] h-[300px] "/>
+                <div class="flex justify-between mt-3 font-semibold">
+                    <p class="text-[#4753FF]">Dress3</p>
+                    <div class="flex mr-6">
+                        <img src="../images/star.svg"/>
+                        <p class="text-[#4753FF]">4.8</p>  
+                    </div>
+                    
+                </div>
+                <div class="font-semibold pt-2 text-[#4753FF]">
+                    $380
+                </div>
+            </div>
+
+        </div>
+        <!-- end of popular section -->
+
+        <!-- start of reviews section -->
+        <section id="reviewsId" class="container w-full mx-auto mt-8">
+            <div>
+                <p class="text-[#4753FF] underline underline-offset-8 text-xl font-semibold">Reviews</p>
+            </div>
+            <div class=" relative flex items-center pt-5 pb-5 pr-5 pl-5 bg-[#F7DAF9] bg-opacity-75 mt-3 space-x-4">
+                <div>
+                    <img src="../images/review1.jpg" class="w-[250px]"/>
+                </div>
+                <div class="absolute left-[900px] top-1 flex">
+                    <img src="../images/starpurple.svg" class ="w-[20px] h-[20px]"/>
+                    <img src="../images/starpurple.svg" class ="w-[20px] h-[20px]"/>
+                    <img src="../images/starpurple.svg" class ="w-[20px] h-[20px]"/>
+                    <img src="../images/starpurple.svg" class ="w-[20px] h-[20px]"/>
+                    <img src="../images/starnofill.svg" class ="w-[20px] h-[20px]"/>
+
+                </div>
+                <div>
+                    <p class="text-[#4753FF] text-center text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, alias. Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus tempora architecto iste eius est, natus qui, rem fugit aliquam adipisci sunt minus quisquam doloribus deleniti repellendus voluptatibus quae tempore! Aut!</p>
+                </div>
+
+            </div>
+            <div class=" relative flex items-center pt-5 pb-5 pr-5 pl-5 bg-[#F7DAF9] bg-opacity-75 mt-3 space-x-4">
+                <div>
+                    <img src="../images/review2.jpg" class="w-[250px]"/>
+                </div>
+                <div class="flex absolute left-[900px] top-1">
+                    <img src="../images/starpurple.svg" class ="w-[20px] h-[20px]"/>
+                    <img src="../images/starpurple.svg" class ="w-[20px] h-[20px]"/>
+                    <img src="../images/starpurple.svg" class ="w-[20px] h-[20px]"/>
+                    <img src="../images/starnofill.svg" class ="w-[20px] h-[20px]"/>
+                    <img src="../images/starnofill.svg" class ="w-[20px] h-[20px]"/>
+
+                </div>
+                <div>
+                    <p class="text-[#4753FF] text-center text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, alias. Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus tempora architecto iste eius est, natus qui, rem fugit aliquam adipisci sunt minus quisquam doloribus deleniti repellendus voluptatibus quae tempore! Aut!</p>
+                </div>
+
+            </div>
+        </section>
+        <!-- end of reviews section -->
+
+        <!-- start of about us section -->
+        <section id="aboutId" class="mt-10 pb-5 container w-full mx-auto justify-center bg-[#F7DAF9] bg-opacity-75">
+            <div class=" flex flex-col justify-center items-center">
+                <p class="text-[#9747FF] py-5 text-3xl font-bold underline underline-offset-4">As-Wish</p>
+                <p class="w-2xl text-[#4753FF] text-center text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque doloremque nam rem asperiores. Dicta neque quos assumenda sint voluptate. Praesentium, voluptatum ducimus! At, illum officia consequuntur et eaque hic laboriosam molestias ab ducimus voluptate distinctio sequi.</p>
+            </div>
+            <div class="flex justify-around items-baseline mt-8">
+                <div class="flex-col flex justify-center items-center">
+                    <img src="../images/delivery.svg" class="w-40"/>
+                    <button class="text-white font-semibold text-lg bg-[#F347FF] w-40 h-8">Fast</button>
+                </div>
+                <div class="flex-col flex justify-center items-center">
+                    <img src="../images/cheap.svg" class="w-40"/>
+                    <button class="text-white font-semibold text-lg bg-[#F347FF] w-40 h-8">Cheap</button>
+                </div>
+                <div class="flex-col flex justify-center items-center">
+                    <img src="../images/variety.svg" class="w-40"/>
+                    <button class="text-white font-semibold text-lg bg-[#F347FF] w-40 h-8">Variety</button>
+                </div>
+            </div>
+        </section>
+        <!-- end of about us section -->
+
+        <!-- start of conatact us section -->
+        <section id="contactId" class="container w-full mx-auto mt-8 ">
+            <div>
+                <p class="text-[#4753FF] underline underline-offset-8 text-xl font-semibold">Contact Us</p>
+            </div>
+            <div class="mt-5 pt-5 pb-5 flex justify-around bg-[#F7DAF9] bg-opacity-75">
+                <div>
+                    <img src="../images/contact.svg" class="w-96 h-96"/>
+                </div>
+                <div class="flex flex-col mt-5 text-sm">
+                    <lable for="name" class="block text-[#4753FF] font-semibold mb-2">Name</lable>
+                    <input type="text" id="name" class="border-2 border-gray-400 rounded-md focus:border-blue-500">
+                    <lable for="name" class="block text-[#4753FF] font-semibold mt-3 mb-2">Email Address</lable>
+                    <input type="text" id="name" class="border-2 border-gray-400 rounded-md focus:border-blue-500">
+                    <lable for="name" class="block text-[#4753FF] font-semibold mt-3 mb-2">Message</lable>
+                    <textarea id="name" class="h-32 border-2 border-gray-400 rounded-md focus:border-blue-500"></textarea>
+                    <!-- <input type="text" id="name" class="h-32 border-2 border-gray-400 rounded-md focus:border-blue-500"> -->
+                    <button class=" text-sm mt-3 bg-[#4753FF] rounded-lg text-white font-semibold py-1 px-8">Send Message</button>
+
+                </div>
+
+            </div>
+            
+            
+        </section>
+        <!-- end of contact us section -->
+    </div>
+
+
+    <!-- start of login section -->
+    <section id="loginPageId" class=" hidden container w-[600px] mx-auto pt-10 pb-10 pr-10 pl-10 absolute left-80 top-24 bg-white shadow-xl rounded-lg shadow-slate-700">
+        
+        <div class="flex space-x-2 ml-12">
+            <img src="../images/logo.svg" class="w-7 h-8 pointer-events-none" onclick="closeLogin()"/>
+            <span class="text-[#9747FF] text-3xl font-bold">Login</span>
+        </div>
+        <button class="absolute top-3 left-[550px]" onclick="closeLogin()">
+            <img src="../images/close.svg" class="w-8"/>
+        </button>
+        <div class="flex justify-around items-center">
+            <div class="flex flex-col bg-[#F7DAF9] bg-opacity-75 pt-5 pb-5 pr-7 pl-7 rounded-xl">
+                <form id="loginFormId">
+                    <lable for="loginEmailId" class="block text-[#4753FF] text-sm font-semibold mb-2">Email Address</lable>
+                    <input type="text" required id="loginEmailId" class="border-2 border-gray-400 rounded-md focus:border-blue-500">
+                    <lable for="loginPasswordId" class="block text-[#4753FF] text-sm font-semibold mt-3 mb-2">Password</lable>
+                    <input type="text" required id="loginPasswordId" class="border-2 border-gray-400 rounded-md focus:border-blue-500">
+                    
+                    <button type="submit" class=" text-sm mt-7 bg-[#4753FF] rounded-lg text-white font-semibold py-1 px-[76px]">login</button>
+                    <p class="underline underline-offset-2 text-[#4753FF] text-[12px] ml-10 font-semibold mt-3 hover:cursor-pointer" onclick="showForgot()">Forgot Password?</p>
+                    <p class="underline underline-offset-2 text-[#4753FF] text-[12px] ml-3 font-semibold mt-3 hover:cursor-pointer" onclick="showSignup()">Not Registered? Sign Up Here</p>
+                </form>
+                
+    
+            </div>
+            <div>
+                <img src="../images/login.svg" class="w-80 h-80"/>
+            </div>
+
+        </div>
+        
+        
+        
+    </section>
+    <!-- end of login section -->
+
+    <!-- start of sign up section -->
+    <section id="signupPageId" class="hidden container w-[600px] mx-auto pt-5 pb-10 pr-10 pl-10 absolute left-80 top-14 bg-white shadow-xl rounded-lg shadow-slate-700">
+        <div class="flex space-x-2 ml-12">
+            <img src="../images/logo.svg" class="w-7 h-8 pointer-events-none"/>
+            <span class="text-[#9747FF] text-3xl font-bold">Sign Up</span>
+        </div>
+        <button class="absolute top-3 left-[550px]" onclick="closeSignup()">
+            <img src="../images/close.svg" class="w-8"/>
+        </button>
+        <div class="flex justify-around items-center mt-5">
+            <div class="flex flex-col bg-[#F7DAF9] bg-opacity-75 pt-5 pb-5 pr-7 pl-7 rounded-xl">
+                <form id="formId">
+                    <lable for="nameId" class="block text-[#4753FF] text-sm font-semibold mb-2" >User Name</lable>
+                    <input type="text" required id="nameId" class="border-2 border-gray-400 rounded-md focus:border-blue-500" value="">
+                    <lable for="emailId" class="mt-3 block text-[#4753FF] text-sm font-semibold mb-2">Email Address</lable>
+                    <input type="email" required id="emailId" class="border-2 border-gray-400 rounded-md focus:border-blue-500">
+                    <lable for="passwordId" class="block text-[#4753FF] text-sm font-semibold mt-3 mb-2">Password</lable>
+                    <input type="text" required id="passwordId" class="border-2 border-gray-400 rounded-md focus:border-blue-500">
+                    <lable for="rePasswordId" class="mt-3 block text-[#4753FF] text-sm font-semibold mb-2">Re-enter Password</lable>
+                    <input type="text" required id="rePasswordId" class="border-2 border-gray-400 rounded-md focus:border-blue-500">
+                    
+                    <button type="submit" class=" text-sm mt-3 bg-[#4753FF] rounded-lg text-white font-semibold py-1 px-[68px]" id="signBtn">Sign Up</button>
+                    <p class="underline underline-offset-2 text-[#4753FF] text-[11px] font-semibold mt-3 ml-3 hover:cursor-pointer" onclick="showLogin()">Already have account? Go to Login</p>
+                    
+
+                </form>
+               
+    
+            </div>
+            <div>
+                <img src="../images/signup.svg" class="w-80 h-80 ml-10"/>
+            </div>
+
+        </div>
+        
+        
+        
+    </section>
+    <!-- end of sign up section -->
+
+    <!-- start of forgotten pasword -->
+    <section id="forgotId" class=" hidden container w-[600px] mx-auto pt-10 pb-10 pr-10 pl-10 absolute left-80 top-24 bg-white shadow-xl rounded-lg shadow-slate-700">
+        <!-- <div class="absolute inset-0 bg-gray-900 bg-opacity-25"></div> -->
+        <div class="flex space-x-2 ml-12">
+            <img src="../images/logo.svg" class="w-7 h-8 pointer-events-none"/>
+            <span class="text-[#9747FF] text-3xl font-bold">Forgotten Password?</span>
+        </div>
+        <button class="absolute top-3 left-[550px]" onclick="closeForgot()">
+            <img src="../images/close.svg" class="w-8"/>
+        </button>
+        <div class="flex justify-around items-center">
+            <div class="flex flex-col bg-[#F7DAF9] bg-opacity-75 pt-5 pb-5 pr-7 pl-7 rounded-xl">
+                <lable for="name" class="block text-[#4753FF] text-sm font-semibold mb-2">Email Address</lable>
+                <input type="text" id="name" class="border-2 border-gray-400 rounded-md focus:border-blue-500">
+                
+                <button class=" text-sm mt-7 bg-[#4753FF] rounded-lg text-white font-semibold py-1 px-8">Send Email</button>
+                <p class= "text-[#4753FF] text-[10px] font-semibold mt-3 text-center">Our team will send a confirmation email. Follow the instructions on the email<p>
+    
+            </div>
+            <div>
+                <img src="../images/forgot.svg" class="w-80 h-80 ml-5"/>
+            </div>
+
+        </div>
+        
+        
+        
+    </section>
+    <!-- end of forgotten password -->
+</body>
+</html>

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BookMark Manager</title>
+
+    <link rel="stylesheet" href="../dist/output.css" />
+  </head>
+  <body class="overflow-x-hidden">
+    <!-- Start Navbar  -->
+    <nav
+      class="w-full py-8 h-[5vh] sticky top-0 z-10 bg-white flex items-center"
+    >
+      <div class="w-full flex justify-between items-center container mx-auto">
+        <div>
+          <img src="../images/logo-bookmark.svg" alt="Bookmark Logo" />
+        </div>
+        <div>
+          <ul class="flex space-x-10 items-center">
+            <li class="text-xs uppercase cursor-pointer">Features</li>
+            <li class="text-xs uppercase cursor-pointer">Pricing</li>
+            <li class="text-xs uppercase cursor-pointer">Contact</li>
+            <li>
+              <button
+                class="text-[10px] bg-orange-600 text-white font-semibold px-5 py-2 uppercase rounded"
+              >
+                Login
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- End Navbar  -->
+
+    <!-- Start Hero Section -->
+    <section
+      class="container flex mx-auto items-center h-[95vh] justify-between relative"
+    >
+      <div class="w-[600px]">
+        <p class="text-5xl font-semibold">A Simple Bookmark Manager</p>
+        <p class="text-[rgba(0,0,0,0.5)] my-8">
+          A clean and simple interface to organize your favourite websites. Open
+          a new browser tab and see your sites load instantly. Try it for free.
+        </p>
+        <div>
+          <button
+            class="text-xs bg-blue-600 text-white font-semibold px-5 py-3 uppercase rounded mr-3"
+          >
+            Get it on Chrome
+          </button>
+          <button
+            class="text-xs bg-slate-100 font-semibold px-5 py-3 uppercase rounded shadow-lg"
+          >
+            Get it on Firefox
+          </button>
+        </div>
+      </div>
+      <div>
+        <img src="../images/illustration-hero.svg" alt="Hero Section" />
+      </div>
+
+      <div
+        class="w-[500px] h-[200px] bg-blue-600 absolute -z-10 rounded-bl-full rounded-tl-full -right-[300px] top-[350px]"
+      ></div>
+    </section>
+    <!-- End Hero Section -->
+
+    <!-- Start Feature Section -->
+    <section
+      class="w-full container mx-auto h-screen relative flex flex-col justify-center"
+    >
+      <div class="w-full flex flex-col space-y-5 items-center">
+        <p class="text-4xl font-semibold">Features</p>
+        <p class="text-center w-[480px] text-[rgba(0,0,0,0.5)]">
+          Our aim is to make it quick and easy for you to access your favourite
+          websites. Your bookmarks sync between your devices so you can access
+          them on the go.
+        </p>
+      </div>
+
+      <div class="w-full flex justify-center mt-10 mb-20">
+        <div class="w-52 px-5 py-4 text-center border-b-4 border-orange-600">
+          <p>Simple Bookmarking</p>
+        </div>
+        <div class="w-52 px-5 py-4 text-center border-b-2">
+          <p>Speedy Searching</p>
+        </div>
+        <div class="w-52 px-5 py-4 text-center border-b-2">
+          <p>Easy Sharing</p>
+        </div>
+      </div>
+
+      <div class="flex justify-between items-center">
+        <div>
+          <img
+            src="../images/illustration-features-tab-1.svg"
+            alt="Hero Section"
+          />
+        </div>
+        <div class="w-[600px]">
+          <p class="text-4xl font-semibold">Bookmark in one click</p>
+          <p class="text-[rgba(0,0,0,0.5)] my-8">
+            Organize your bookmarks however you like. Our simple drag-and-drop
+            interface gives you complete control over how you manage your
+            favourite sites.
+          </p>
+          <div>
+            <button
+              class="text-xs bg-blue-600 text-white font-semibold px-5 py-3 uppercase rounded mr-3"
+            >
+              More Info
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="w-[800px] h-[350px] bg-blue-600 absolute -z-10 rounded-br-full rounded-tr-full -left-[300px] top-[400px]"
+      ></div>
+    </section>
+    <!-- End Feature Section -->
+
+    <!-- Start Extension  -->
+    <section
+      class="w-full container mx-auto h-screen relative flex flex-col justify-center"
+    >
+      <div class="w-full flex flex-col space-y-5 items-center">
+        <p class="text-4xl font-semibold">Download the extension</p>
+        <p class="text-center w-[480px] text-[rgba(0,0,0,0.5)]">
+          We’ve got more browsers in the pipeline. Please do let us know if
+          you’ve got a favourite you’d like us to prioritize.
+        </p>
+      </div>
+
+      <div class="w-full flex justify-center items-center space-x-10">
+        <div class="py-8 w-56 text-center shadow-xl rounded-lg">
+          <div class="flex justify-center">
+            <img src="../images/logo-chrome.svg" alt="" />
+          </div>
+          <div class="my-6">
+            <p class="font-semibold mb-4">Add to Chrome</p>
+            <p class="text-xs text-[rgba(0,0,0,0.5)]">Minimum Version 62</p>
+          </div>
+          <div class="border-t-2 border-dotted pt-6">
+            <button class="bg-blue-600 text-xs rounded-md px-5 py-2 text-white">
+              Add & Install Extension
+            </button>
+          </div>
+        </div>
+        <div class="py-8 w-56 text-center shadow-xl rounded-lg mt-20">
+          <div class="flex justify-center">
+            <img src="../images/logo-firefox.svg" alt="" />
+          </div>
+          <div class="my-6">
+            <p class="font-semibold mb-4">Add to FireFox</p>
+            <p class="text-xs text-[rgba(0,0,0,0.5)]">Minimum Version 55</p>
+          </div>
+          <div class="border-t-2 border-dotted pt-6">
+            <button class="bg-blue-600 text-xs rounded-md px-5 py-2 text-white">
+              Add & Install Extension
+            </button>
+          </div>
+        </div>
+        <div class="py-8 w-56 text-center shadow-xl rounded-lg mt-40">
+          <div class="flex justify-center">
+            <img src="../images/logo-opera.svg" alt="" />
+          </div>
+          <div class="my-6">
+            <p class="font-semibold mb-4">Add to Opera</p>
+            <p class="text-xs text-[rgba(0,0,0,0.5)]">Minimum Version 46</p>
+          </div>
+          <div class="border-t-2 border-dotted pt-6">
+            <button class="bg-blue-600 text-xs rounded-md px-5 py-2 text-white">
+              Add & Install Extension
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Extension -->
+
+    <!-- Start QandA  -->
+    <section
+      class="w-full container mx-auto h-screen relative flex flex-col justify-center"
+    >
+      <div class="w-full flex flex-col space-y-5 items-center">
+        <p class="text-4xl font-semibold">Frequently Asked Questions</p>
+        <p class="text-center w-[480px] text-[rgba(0,0,0,0.5)]">
+          Here are some of our FAQs. If you have any other questions you’d like
+          answered please feel free to email us.
+        </p>
+      </div>
+
+      <div class="w-full flex flex-col items-center mt-10">
+        <div
+          class="w-[500px] flex justify-between items-center border-t-2 border-b-2 py-5"
+        >
+          <p>What is Bookmark?</p>
+          <img src="../images/icon-arrow.svg" alt="" />
+        </div>
+        <div
+          class="w-[500px] flex justify-between items-center border-b-2 py-5"
+        >
+          <p>How can I request a new browser?</p>
+          <img src="../images/icon-arrow.svg" alt="" />
+        </div>
+        <div
+          class="w-[500px] flex justify-between items-center border-b-2 py-5"
+        >
+          <p>Is there a mobile app?</p>
+          <img src="../images/icon-arrow.svg" alt="" />
+        </div>
+        <div
+          class="w-[500px] flex justify-between items-center border-b-2 py-5"
+        >
+          <p>What about other Chromium browsers?</p>
+          <img src="../images/icon-arrow.svg" alt="" />
+        </div>
+
+        <button
+          class="text-xs bg-blue-600 text-white font-semibold px-5 py-3 uppercase rounded mt-10"
+        >
+          More Info
+        </button>
+      </div>
+    </section>
+    <!-- End QandA -->
+
+    <footer
+      class="bg-blue-600 flex flex-col items-center space-y-8 py-10 text-white"
+    >
+      <p class="uppercase tracking-[5px] text-xs font-semibold opacity-80">
+        35,000+ already joined
+      </p>
+      <p class="text-4xl text-center">
+        Stay up-to-date with what <br />
+        we’re doing
+      </p>
+      <div class="flex space-x-5">
+        <input
+          type="text"
+          class="py-3 px-5 rounded-md outline-none w-96"
+          placeholder="Enter your email address"
+        />
+        <button class="py-3 px-8 rounded-md outline-none bg-orange-600">
+          Contact Us
+        </button>
+      </div>
+    </footer>
+
+    <footer class="w-full bg-blue-950 text-white">
+      <div class="container mx-auto flex justify-between py-8">
+        <ul class="flex space-x-5 text-xs font-semibold">
+          <li class="uppercase">Features</li>
+          <li class="uppercase">Pricing</li>
+          <li class="uppercase">Contact</li>
+        </ul>
+        <ul class="flex space-x-5 items-center">
+          <li>
+            <img src="../images/icon-facebook.svg" alt="" />
+          </li>
+          <li>
+            <img src="../images/icon-twitter.svg" alt="" />
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

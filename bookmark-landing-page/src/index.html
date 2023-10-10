@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookmark Landing Page</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <link rel="stylesheet" href="../dist/output.css" />
+
+    <script src="./script.js" defer></script>
+  </head>
+  <body class="overflow-x-hidden">
+    <nav class="w-full py-5 fixed z-50 bg-white" id="navId">
+      <div class="w-full container mx-auto flex justify-between items-center">
+        <div id="logoId">
+          <img src="../images/logo-bookmark.svg" alt="Bookmark Logo"/>
+        </div>
+        <ul class="space-x-6 text-xs items-center md:flex sm:hidden">
+          <li class="hover:text-softRed cursor-pointer">FEATURES</li>
+          <li class="hover:text-softRed cursor-pointer">PRICING</li>
+          <li class="hover:text-softRed cursor-pointer">CONTACT</li>
+          <li>
+            <button class="py-3 px-8 rounded-md bg-softRed text-white hover:bg-white hover:border-2 border-softRed hover:text-softRed">
+              LOGIN
+            </button>
+          </li>
+        </ul>
+        <input type="checkbox" id="menuId" onclick="showMenu()" class="md:hidden sm:hidden">
+        <label for="menuId" class="md:hidden sm:block"><ion-icon name="menu-outline" class="md:hidden sm:block h-5 w-5 font-bold" id="3lineId"></ion-icon></label>
+      </div>
+      
+    </nav>
+    <div class="hidden w-full h-screen bg-darkBlue bg-opacity-100" id="showMenuId">
+      <div class="flex justify-between container mx-auto pt-10">
+        <svg width="148" height="25" xmlns="http://www.w3.org/2000/svg">
+          <g fill="none" fill-rule="evenodd">
+            <path d="M37 6.299h5.227c.746 0 1.434.155 2.062.466.629.311 1.123.735 1.484 1.27s.542 1.12.542 1.754c0 .672-.165 1.254-.495 1.746-.33.491-.762.868-1.297 1.129v.15c.697.248 1.25.643 1.661 1.185.41.541.616 1.191.616 1.95 0 .735-.196 1.385-.588 1.951a3.817 3.817 0 0 1-1.587 1.307c-.665.305-1.403.457-2.212.457H37V6.299zm5.04 5.45c.548 0 .986-.152 1.316-.457.33-.305.495-.688.495-1.148 0-.448-.159-.824-.476-1.13-.318-.304-.738-.457-1.26-.457H39.52v3.192h2.52zm.28 5.619c.61 0 1.086-.159 1.428-.476.342-.317.513-.731.513-1.241 0-.51-.174-.927-.522-1.251-.349-.324-.847-.485-1.494-.485H39.52v3.453h2.8zm12.927 2.595c-1.307 0-2.492-.308-3.556-.924a6.711 6.711 0 0 1-2.511-2.53c-.61-1.07-.915-2.246-.915-3.528 0-1.281.305-2.457.915-3.528a6.711 6.711 0 0 1 2.51-2.529C52.756 6.308 53.94 6 55.248 6c1.306 0 2.492.308 3.556.924a6.711 6.711 0 0 1 2.51 2.53c.61 1.07.915 2.246.915 3.527 0 1.282-.305 2.458-.915 3.528a6.711 6.711 0 0 1-2.51 2.53c-1.064.616-2.25.924-3.556.924zm0-2.39a4.52 4.52 0 0 0 2.258-.578 4.177 4.177 0 0 0 1.615-1.624c.392-.697.588-1.494.588-2.39 0-.896-.196-1.692-.588-2.389a4.177 4.177 0 0 0-1.615-1.624 4.52 4.52 0 0 0-2.258-.579 4.47 4.47 0 0 0-2.25.579 4.195 4.195 0 0 0-1.605 1.624c-.392.697-.588 1.493-.588 2.39 0 .895.196 1.692.588 2.389a4.195 4.195 0 0 0 1.605 1.624 4.47 4.47 0 0 0 2.25.578zm15.353 2.39c-1.307 0-2.492-.308-3.556-.924a6.711 6.711 0 0 1-2.51-2.53c-.61-1.07-.915-2.246-.915-3.528 0-1.281.305-2.457.914-3.528a6.711 6.711 0 0 1 2.511-2.529C68.108 6.308 69.294 6 70.6 6c1.307 0 2.492.308 3.556.924a6.711 6.711 0 0 1 2.51 2.53c.61 1.07.915 2.246.915 3.527 0 1.282-.305 2.458-.914 3.528a6.711 6.711 0 0 1-2.511 2.53c-1.064.616-2.25.924-3.556.924zm0-2.39a4.52 4.52 0 0 0 2.259-.578 4.177 4.177 0 0 0 1.614-1.624c.392-.697.588-1.494.588-2.39 0-.896-.196-1.692-.588-2.389a4.177 4.177 0 0 0-1.614-1.624 4.52 4.52 0 0 0-2.259-.579 4.47 4.47 0 0 0-2.25.579 4.195 4.195 0 0 0-1.605 1.624c-.392.697-.588 1.493-.588 2.39 0 .895.196 1.692.588 2.389a4.195 4.195 0 0 0 1.606 1.624 4.47 4.47 0 0 0 2.249.578zM79.83 6.3h2.52v5.73h.15l4.89-5.73h3.043v.149L85.6 11.973l5.338 7.542v.149h-3.08l-3.994-5.693-1.512 1.773v3.92h-2.52V6.299zM93.779 6h3.248l3.546 9.39h.15L104.268 6h3.267v13.365h-2.501v-6.589l.15-2.221h-.15l-3.398 8.81h-1.96l-3.416-8.81h-.149l.15 2.221v6.59h-2.483V6zm20.8 0h2.894l5.021 13.365h-2.781l-1.12-3.192h-5.115l-1.12 3.192h-2.781L114.579 6zm3.193 7.859l-1.176-3.36-.486-1.606h-.149l-.485 1.606-1.195 3.36h3.49zM124.553 6h4.872c.871 0 1.646.18 2.324.541.678.361 1.204.862 1.577 1.503.374.64.56 1.366.56 2.175 0 .858-.27 1.62-.812 2.286a4.617 4.617 0 0 1-2.044 1.447l-.018.13 3.584 5.134v.15h-2.894l-3.453-5.022h-1.176v5.021h-2.52V6zm4.853 6.03c.573 0 1.04-.175 1.4-.523.361-.349.542-.79.542-1.326 0-.51-.172-.945-.514-1.306-.342-.361-.806-.542-1.39-.542h-2.371v3.696h2.333zm7.23-6.03h2.52v5.73h.15l4.89-5.73h3.043v.15l-4.835 5.525 5.34 7.541v.15h-3.08l-3.996-5.694-1.512 1.773v3.92h-2.52V6z" fill="white" fill-rule="nonzero"/>
+            <g>
+              <circle fill="white" cx="12.5" cy="12.5" r="12.5"/>
+              <path d="M9 9v10l3.54-3.44L16.078 19V9a2 2 0 0 0-2-2H11a2 2 0 0 0-2 2z" fill="gray"/>
+            </g>
+          </g>
+        </svg>
+        <ion-icon name="close-outline" class="text-white text-3xl"></ion-icon>
+      </div>
+      <div class="container mx-auto flex flex-col  justify-center items-center mt-10 text-white">
+        <div class=" container uppercase border-t border-opacity-5 flex justify-center pt-5 pb-5 text-2xl">
+          Features
+        </div>
+        <div class=" container uppercase border-t border-opacity-5 flex justify-center pt-5 pb-5 text-2xl">
+          Pricing
+        </div>
+        <div class=" container uppercase border-t border-opacity-5 flex justify-center pt-5 pb-5 text-2xl">
+          Features
+        </div>
+        <div class=" container uppercase border-t border-opacity-5 flex justify-center pt-5 pb-5 text-2xl">
+          Contact
+        </div>
+        <div class=" container uppercase border-t border-opacity-5 flex justify-center pt-5 pb-5 text-2xl">
+          <button class="border-2 rounded border-white py-3 px-[290px]">Login </button>
+        </div> 
+      </div>
+      <div>
+        
+      </div>
+
+    </div>
+
+    <section
+      class="w-full container mx-auto flex justify-between items-center min-h-screen relative"
+    >
+      <div>
+        <p class="text-4xl font-semibold">A Simple Bookmark Manager</p>
+        <p class="mt-5 text-[rgba(0,0,0,0.5)]">
+          A clean and simple interface to organize your favourite websites. Open
+          a new browser tab and see your sites load instantly. Try it for free.
+        </p>
+        <div class="flex space-x-3 mt-5">
+          <button class="py-2 px-5 bg-softBlue text-white rounded-sm text-xs hover:text-softBlue hover:border-2 border-softBlue hover:bg-white">
+            Get it on Chrome
+          </button>
+          <button class="py-2 px-5 bg-secondWhite rounded-sm text-xs shadow-md hover:text-softBlue hover:border-2 border-softBlue hover:bg-white">
+            Get it on Firefox
+          </button>
+        </div>
+      </div>
+      <div>
+        <img src="../images/illustration-hero.svg" alt="" class="w-[800px]" />
+      </div>
+
+      <div
+        class="w-[500px] h-[300px] bg-softBlue absolute bottom-32 -right-52 rounded-bl-full rounded-tl-full -z-10"
+      ></div>
+    </section>
+
+    <section class="w-full container mx-auto min-h-screen relative">
+      <div class="w-full flex flex-col items-center space-y-3">
+        <p class="text-2xl font-semibold">Features</p>
+        <p class="text-[rgba(0,0,0,0.5)] w-[480px] text-center">
+          Our aim is to make it quick and easy for you to access your favourite
+          websites. Your bookmarks sync between your devices so you can access
+          them on the go.
+        </p>
+      </div>
+
+      <div class="w-full flex justify-center mt-5">
+        <div
+          class="w-52 py-5 text-sm border-b-2 border-[rgba(0,0,0,0.2)] text-center text-[rgba(0,0,0,0.5)] hover:text-softRed cursor-pointer  active:border-b-softRed active:border-b-4" id="bottom1"
+        >
+          <p onclick="displayTab1()">Simple Bookmarking</p>
+        </div>
+        <div
+          class="w-52 px-10 py-5 text-sm border-b-2 border-[rgba(0,0,0,0.2)] text-center text-[rgba(0,0,0,0.5)] hover:text-softRed cursor-pointer active:border-b-softRed active:border-b-4" id="bottom2"
+        >
+          <p onclick="displayTab2()">Speedy Searching</p>
+        </div>
+        <div
+          class="w-52 px-10 py-5 text-sm border-b-2 border-[rgba(0,0,0,0.2)] text-center text-[rgba(0,0,0,0.5)] hover:text-softRed cursor-pointer active:border-b-softRed active:border-b-4" id="bottom3"
+        >
+          <p onclick="displayTab3()">Easy Sharing</p>
+        </div>
+      </div>
+
+
+      
+
+
+
+
+
+
+      <div class="w-full mx-auto container flex items-center relative pt-20" id="tab1">
+        <div>
+          <img
+            src="../images/illustration-features-tab-1.svg"
+            alt=""
+            class="w-[400px]"
+          />
+        </div>
+  
+        <div class="ml-44">
+          <p class="text-2xl font-semibold">Bookmark in one click</p>
+          <p class="mt-5 text-[rgba(0,0,0,0.5)] w-[380px]">
+            Organize your bookmarks however you like. Our simple drag-and-drop
+            interface gives you complete control over how you manage your
+            favourite sites.
+          </p>
+          <div class="mt-5">
+            <button class="py-2 px-5 bg-softBlue text-white rounded-sm text-xs">
+              More Info
+            </button>
+          </div>
+        </div>
+        <div
+          class="w-[550px] h-[250px] bg-softBlue absolute top-36 -left-44 rounded-br-full rounded-tr-full -z-10"
+        ></div>
+      </div>
+
+      <div class="w-full mx-auto container hidden items-center relative pt-20" id="tab2">
+        <div>
+          <img
+            src="../images/illustration-features-tab-2.svg"
+            alt=""
+            class="w-[400px]"
+          />
+        </div>
+  
+        <div class="ml-44">
+          <p class="text-2xl font-semibold">Intelligent search</p>
+          <p class="mt-5 text-[rgba(0,0,0,0.5)] w-[380px]">
+            Organize your bookmarks however you like. Our simple drag-and-drop
+            interface gives you complete control over how you manage your
+            favourite sites.
+          </p>
+          <div class="mt-5">
+            <button class="py-2 px-5 bg-softBlue text-white rounded-sm text-xs">
+              More Info
+            </button>
+          </div>
+        </div>
+        <div
+          class="w-[550px] h-[300px] bg-softBlue absolute top-48 -left-44 rounded-br-full rounded-tr-full -z-10"
+        ></div>
+      </div>
+
+      <div class="w-full mx-auto container hidden items-center relative pt-20" id="tab3">
+        <div>
+          <img
+            src="../images/illustration-features-tab-3.svg"
+            alt=""
+            class="w-[400px]"
+          />
+        </div>
+  
+        <div class="ml-44">
+          <p class="text-2xl font-semibold">Share your bookmarks</p>
+          <p class="mt-5 text-[rgba(0,0,0,0.5)] w-[380px]">
+            Organize your bookmarks however you like. Our simple drag-and-drop
+            interface gives you complete control over how you manage your
+            favourite sites.
+          </p>
+          <div class="mt-5">
+            <button class="py-2 px-5 bg-softBlue text-white rounded-sm text-xs">
+              More Info
+            </button>
+          </div>
+        </div>
+        <div
+          class="w-[550px] h-[250px] bg-softBlue absolute top-48 -left-44 rounded-br-full rounded-tr-full -z-10"
+        ></div>
+      </div>
+
+
+
+
+    
+
+    </section>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section
+      class="w-full container mx-auto min-h-screen flex flex-col justify-center"
+    >
+      <div class="w-full flex flex-col items-center space-y-3">
+        <p class="text-2xl font-semibold">Download the extension</p>
+        <p class="text-[rgba(0,0,0,0.5)] w-[480px] text-center">
+          We’ve got more browsers in the pipeline. Please do let us know if
+          you’ve got a favourite you’d like us to prioritize.
+        </p>
+      </div>
+
+      <div class="w-full flex items-center justify-center space-x-10">
+        <div class="py-3 w-56 text-center shadow-md rounded-md">
+          <div class="flex justify-center">
+            <img src="../images/logo-chrome.svg" alt="" class="w-20" />
+          </div>
+
+          <div class="my-6 flex flex-col space-y-5">
+            <p class="font-semibold">Add to Chrome</p>
+            <p class="text-xs text-[rgba(0,0,0,0.5)]">Minimum version 62</p>
+          </div>
+
+          <div class="pt-4 border-t-2 border-dotted border-[rgba(0,0,0,0.3)]">
+            <button class="bg-softBlue text-xs rounded-md px-5 py-2 text-white hover:bg-white border-2 border-softBlue hover:text-softBlue">
+              Add & Install Extension
+            </button>
+          </div>
+        </div>
+
+        <div class="py-3 w-56 text-center shadow-md rounded-md mt-20">
+          <div class="flex justify-center">
+            <img src="../images/logo-firefox.svg" alt="" class="w-20" />
+          </div>
+
+          <div class="my-6 flex flex-col space-y-5">
+            <p class="font-semibold">Add to Firefox</p>
+            <p class="text-xs text-[rgba(0,0,0,0.5)]">Minimum version 55</p>
+          </div>
+
+          <div class="pt-4 border-t-2 border-dotted border-[rgba(0,0,0,0.3)]">
+            <button class="bg-softBlue text-xs rounded-md px-5 py-2 text-white hover:bg-white border-2 border-softBlue hover:text-softBlue">
+              Add & Install Extension
+            </button>
+          </div>
+        </div>
+
+        <div class="py-3 w-56 text-center shadow-md rounded-md mt-40">
+          <div class="flex justify-center">
+            <img src="../images/logo-opera.svg" alt="" class="w-20" />
+          </div>
+
+          <div class="my-6 flex flex-col space-y-5">
+            <p class="font-semibold">Add to Opera</p>
+            <p class="text-xs text-[rgba(0,0,0,0.5)]">Minimum version 46</p>
+          </div>
+
+          <div class="pt-4 border-t-2 border-dotted border-[rgba(0,0,0,0.3)]">
+            <button class="bg-softBlue text-xs rounded-md px-5 py-2 text-white hover:bg-white border-2 border-softBlue hover:text-softBlue">
+              Add & Install Extension
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="w-full container mx-auto min-h-screen flex flex-col justify-center space-y-10">
+      <div class="w-full flex flex-col items-center space-y-3">
+        <p class="text-2xl font-semibold">Frequently Asked Questions</p>
+        <p class="text-[rgba(0,0,0,0.5)] w-[480px] text-center">
+          Here are some of our FAQs. If you have any other questions you’d like
+          answered please feel free to email us.
+        </p>
+      </div>
+
+      <div class="w-full flex flex-col items-center">
+        <div class="w-[500px] border-b-2 border-t-2 border-[rgba(0,0,0,0.2)] pt-5 pr-5">
+          <div class=" flex justify-between items-center pb-5">
+            <p class="text-[rgba(0,0,0,0.5)] hover:text-softRed">What is Bookmark?</p>
+            <input type="checkbox" id="bookId" onclick="check1()" hidden>
+            <label for="bookId"><ion-icon name="chevron-down-outline" class="text-softBlue text-xl font-bold" id="icon1"></ion-icon></label>
+          </div>
+          <p class="text-[rgba(0,0,0,0.5)] pb-5 hidden" id="showp1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint alias rem veniam ex similique ducimus eaque accusantium deserunt ratione. Non, beatae in. Vitae, ratione quae. Illo molestiae repellendus quasi eum!
+          </p>
+        </div>  
+          
+        <div class="w-[500px] border-b-2 border-[rgba(0,0,0,0.2)] pt-5 pr-5">
+          <div class=" flex justify-between items-center pb-5">
+            <p class="text-[rgba(0,0,0,0.5)] hover:text-softRed">How can I request a new browser?</p>
+            <input type="checkbox" id="requestId" onclick="check2()" hidden>
+            <label for="requestId"><ion-icon name="chevron-down-outline" class="text-softBlue text-xl font-bold" id="icon2"></ion-icon></label>
+          </div>
+          <p class="text-[rgba(0,0,0,0.5)] pb-5 hidden" id="showp2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint alias rem veniam ex similique ducimus eaque accusantium deserunt ratione. Non, beatae in. Vitae, ratione quae. Illo molestiae repellendus quasi eum!
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Id aut, sed, cum magni consequuntur aliquid repellat odit, beatae architecto maxime magnam nulla sapiente vero porro quibusdam commodi quia illum iure?
+          </p>
+        </div>
+        <div class="w-[500px] border-b-2 border-[rgba(0,0,0,0.2)] pt-5 pr-5">
+          <div class=" flex justify-between items-center pb-5">
+            <p class="text-[rgba(0,0,0,0.5)] hover:text-softRed">Is there a mobile app?</p>
+            <input type="checkbox" id="appId" onclick="check3()" hidden>
+            <label for="appId"><ion-icon name="chevron-down-outline" class="text-softBlue text-xl font-bold" id="icon3"></ion-icon></label>
+          </div>
+          <p class="text-[rgba(0,0,0,0.5)] pb-5 hidden" id="showp3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint alias rem veniam ex similique ducimus eaque accusantium deserunt ratione. Non, beatae in. Vitae, ratione quae. Illo molestiae repellendus quasi eum!
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Id aut, sed, cum magni consequuntur aliquid repellat odit, beatae architecto maxime magnam nulla sapiente vero porro quibusdam commodi quia illum iure?
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, dolorem. Adipisci deserunt eligendi quod voluptatibus quia quo praesentium, aliquam officia assumenda corporis laborum quidem, rerum nulla inventore, culpa cupiditate tempore!
+          </p>
+        </div>  
+        <div class="w-[500px] border-b-2 border-[rgba(0,0,0,0.2)] pt-5 pr-5">
+          <div class=" flex justify-between items-center pb-5">
+            <p class="text-[rgba(0,0,0,0.5)] hover:text-softRed">What about other Chromium browsers?</p>
+            <input type="checkbox" id="otherId" onclick="check4()" hidden>
+            <label for="otherId"><ion-icon name="chevron-down-outline" class="text-softBlue text-xl font-bold" id="icon4"></ion-icon></label>
+          </div>
+          <p class="text-[rgba(0,0,0,0.5)] pb-5 hidden" id="showp4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint alias rem veniam ex similique ducimus eaque accusantium deserunt ratione. Non, beatae in. Vitae, ratione quae. Illo molestiae repellendus quasi eum!
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Id aut, sed, cum magni consequuntur aliquid repellat odit, beatae architecto maxime magnam nulla sapiente vero porro quibusdam commodi quia illum iure?
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, dolorem. Adipisci deserunt eligendi quod voluptatibus quia quo praesentium, aliquam officia assumenda corporis laborum quidem, rerum nulla inventore, culpa cupiditate tempore!
+          </p>
+        </div>  
+        
+        
+
+        <div class="mt-10">
+          <button class="py-2 px-5 bg-softBlue text-white rounded-sm text-xs">
+            More Info
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="w-full flex flex-col justify-center items-center bg-softBlue py-16 text-white space-y-8">
+      <p class="uppercase text-[10px] tracking-[5px]">35,000+ already joined</p>
+      <div class="text-center w-80 font-bold">
+        <p class="text-2xl">Stay up-to-date with what we’re doing</p>
+      </div>
+
+      <div class="flex items-start space-x-3">
+        <div class="relative">
+          <input type="text" id="inputId" value=""  class=" input-field p-3 outline-none text-black rounded-sm w-72 text-xs" placeholder="Enter your email address"/>
+          <ion-icon name="alert-circle-outline" class="absolute hidden text-softRed left-64 text-lg top-3" id="iconId"></ion-icon>
+          <div class="p-3 hidden rounded-sm w-72 text-xs bg-softRed text-white" id="alertId">Whoops! make sure it's an email.</div>
+        </div>
+        
+
+        <button class="py-3 px-5 bg-softRed text-white rounded-sm text-xs " id="btnId" onclick="emailValidate()">
+          Contact Us
+        </button>
+      </div>
+
+    </section>
+
+    <footer class="w-full bg-darkBlue py-6">
+      <div class="w-full container mx-auto text-white flex justify-between">
+          <ul class="flex space-x-6 text-xs items-center">
+            <li class="hover:text-softRed cursor-pointer">FEATURES</li>
+            <li class="hover:text-softRed cursor-pointer">PRICING</li>
+            <li class="hover:text-softRed cursor-pointer">CONTACT</li>
+          </ul>
+          <ul class="flex space-x-6 text-xs items-center">
+            <li>
+              <!-- <img src="../images/icon-facebook.svg" alt="" class="hover:fill-softRed cursor-pointer"> -->
+              <ion-icon name="logo-facebook" class="text-2xl hover:text-softRed cursor-pointer"></ion-icon>
+            </li>
+            <li>
+              <!-- <img src="../images/icon-twitter.svg" alt=""> -->
+              <ion-icon name="logo-twitter" class="text-2xl hover:text-softRed cursor-pointer"></ion-icon>
+            </li>
+          </ul>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.sphere{
+    @apply w-[300px] h-[300px] bg-white rounded-full drop-shadow-lg flex justify-center items-center transition-all duration-200 cursor-pointer hover:text-white;
+}
