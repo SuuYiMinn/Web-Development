@@ -1,0 +1,45 @@
+{
+    "title" : "Unread Message",
+    "list" : [
+        {
+            "text" :"Reserve VIP Room at 09:00 AM (Doctor + 2 Nurse) Support.",
+            "vip": true,
+            "time" : "10:00 AM"
+        },
+        {
+            "text" :"Normal Room at 09:00 AM (Medical Only) Support.",
+            "vip": false,
+            "time" : "09:00 AM"
+        },
+        {
+            "text" :"Prof.Kimura Assign to prepare Covid Alert.",
+            "vip": true,
+            "time" : "01:00 PM"
+        },
+        {
+            "text" :"Room 103 is now Avaliable.",
+            "vip": true,
+            "time" : "12:00 PM"
+        },
+        {
+            "text" :"Reserve VIP Room at 09:00 AM (Doctor+Medical) Support.",
+            "vip": true,
+            "time" : "11:00 PM"
+        },
+        {
+            "text" :"Normal Room at 09:00 AM (Doctor Only) Support.",
+            "vip": true,
+            "time" : "09:00 PM"
+        },
+        {
+            "text" :"Covid 19 Rule.",
+            "vip": true,
+            "time" : "08:00 PM"
+        },
+        {
+            "text" :"Room 103 is now Maintenance.",
+            "vip": false,
+            "time" : "08:00 PM"
+        }
+    ]
+}

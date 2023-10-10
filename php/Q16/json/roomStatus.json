@@ -1,0 +1,52 @@
+{
+    "title" : "Room Status",
+    "list":[
+        {
+            "room":"Rm.101",
+            "status" : 0, 
+            "person" : 2,
+            "price" : 100
+        },
+        {
+            "room":"Rm.102",
+            "status" : 1, 
+            "person" : 2,
+            "price" : 80
+        },
+        {
+            "room":"Rm.103",
+            "status" : 2, 
+            "person" : "none",
+            "price" : 100
+        },
+        {
+            "room":"Rm.104",
+            "status" : 0, 
+            "person" : 4,
+            "price" : 200
+        },{
+            "room":"Rm.201",
+            "status" : 1, 
+            "person" : 5,
+            "price" : 400
+        },
+        {
+            "room":"Rm.202",
+            "status" : 2, 
+            "person" : "none",
+            "price" : 600
+        },
+        {
+            "room":"Rm.203",
+            "status" : 0, 
+            "person" : 2,
+            "price" : 300
+        },
+        {
+            "room":"Rm.204",
+            "status" : 0, 
+            "person" : 4,
+            "price" : 120
+        }
+    ]
+}

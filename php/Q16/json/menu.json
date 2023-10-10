@@ -1,0 +1,13 @@
+{
+    "tag":[
+        {
+            "text" : "Message",
+            "icon" : "<ion-icon name='mail-unread-outline'></ion-icon>"
+        },
+        {
+            "text" : "Appointment",
+            "icon" : "<ion-icon name='calendar'></ion-icon>"
+        }
+    ],
+    "phone":"+95 9421010735"
+}
